@@ -1,5 +1,12 @@
 # 01 - Console help
 
+## Command concatenation `;`
+
+```powershell
+<command1> ; <command2> ; <command_n> 
+```
+
+
 ## Command output
 Pipe with 
 

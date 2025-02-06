@@ -4,6 +4,8 @@
 
 ### GREP - `Select-String`
 
+The `Context` is the number of lines wrapping the `search_string` 
+
 ```powershell
-kustomize build . | Select-String mapper-config -Context 2
+<command> | Select-String <search_string> -Context 2
 ```

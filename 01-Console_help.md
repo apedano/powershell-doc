@@ -23,6 +23,15 @@ or
 gc <file> | Select-String <search_string> -Context 2
 ```
 
+## Assign command output to a variable (String)
+
+```powershell
+$var_name=<command> | Out-String
+```
+Example
+```powershell
+$known_hosts_content=ssh-keyscan -p 7999 git.belastingdienst.nl | Out-String
+```
 
 ### GREP - `Select-String`
 

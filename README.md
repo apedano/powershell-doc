@@ -4,23 +4,23 @@
 https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.5
 ### Equality
 
-`-eq`, `-ieq`, `-ceq` - equals
-`-ne`, `-ine`, `-cne` - not equals
-`-gt`, `-igt`, `-cgt` - greater than
-`-ge`, `-ige`, `-cge` - greater than or equal
-`-lt`, `-ilt`, `-clt` - less than
-`-le`, `-ile`, `-cle` - less than or equal
+* `-eq`, `-ieq`, `-ceq` - equals
+* `-ne`, `-ine`, `-cne` - not equals
+* `-gt`, `-igt`, `-cgt` - greater than
+* `-ge`, `-ige`, `-cge` - greater than or equal
+* `-lt`, `-ilt`, `-clt` - less than
+* `-le`, `-ile`, `-cle` - less than or equal
 
 ### Matching
 
-`-like`, `-ilike`, `-clike` - string matches wildcard pattern
-`-notlike`, `-inotlike`, `-cnotlike` - string doesn't match wildcard pattern
-`-match`, `-imatch`, `-cmatch` - string matches regex pattern
-`-notmatch`, `-inotmatch`, `-cnotmatch` - string doesn't match regex pattern
+* `-like`, `-ilike`, `-clike` - string matches wildcard pattern
+* `-notlike`, `-inotlike`, `-cnotlike` - string doesn't match wildcard pattern
+* `-match`, `-imatch`, `-cmatch` - string matches regex pattern
+* `-notmatch`, `-inotmatch`, `-cnotmatch` - string doesn't match regex pattern
 
 ### Replacement
 
-`-replace`, `-ireplace`, `-creplace` - replaces strings matching a regex pattern
+* `-replace`, `-ireplace`, `-creplace` - replaces strings matching a regex pattern
 
 ```
 "book" -ireplace "B", "C" # Case insensitive
@@ -29,15 +29,15 @@ https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/ab
 
 ### Containment
 
-`-contains`, `-icontains`, `-ccontains` - collection contains a value
-`-notcontains`, `-inotcontains`, `-cnotcontains` - collection doesn't contain a value
-`-in`, `-iin`, `-cin` - value is in a collection
-`-notin`, `-inotin`, `-cnotin` - value isn't in a collection
+* `-contains`, `-icontains`, `-ccontains` - collection contains a value
+* `-notcontains`, `-inotcontains`, `-cnotcontains` - collection doesn't contain a value
+* `-in`, `-iin`, `-cin` - value is in a collection
+* `-notin`, `-inotin`, `-cnotin` - value isn't in a collection
 
 ### Type
 
-`-is` - both objects are the same type
-`-isnot` - the objects aren't the same type
+* `-is` - both objects are the same type
+* `-isnot` - the objects aren't the same type
 
 ### Like 
 Pattern match

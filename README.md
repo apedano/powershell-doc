@@ -17,6 +17,9 @@ https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/ab
 * `-notlike`, `-inotlike`, `-cnotlike` - string doesn't match wildcard pattern
 * `-match`, `-imatch`, `-cmatch` - string matches regex pattern
 * `-notmatch`, `-inotmatch`, `-cnotmatch` - string doesn't match regex pattern
+```
+$contentType -like "*application/json"
+```
 
 ### Replacement
 
@@ -39,11 +42,7 @@ https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/ab
 * `-is` - both objects are the same type
 * `-isnot` - the objects aren't the same type
 
-### Like 
-Pattern match
-```
-$contentType -like "*application/json"
-```
+
 
 
 

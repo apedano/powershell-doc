@@ -1,7 +1,7 @@
 # powershell-doc
 
 ## Boolean operations
-``
+```
 $condition1 = $true
 $condition2 = $false
 
@@ -11,7 +11,7 @@ $condition1 -xor $condition2 # -> $true (TRUE if exactly only one is TRUE, other
 
 ! $condition2 # -> $true 
 -not $condition2 # -> $true 
-``
+```
 
 
 

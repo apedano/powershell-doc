@@ -123,6 +123,8 @@ Operations
 #Accessing values
 $($myMap.Name)
 $($myMap["Age"])
+$myKey = "City"
+$myMap[$myKey]
 
 Write-Host "Keys of the map: $($myMap.Keys -Join ', ')"
 Write-Host "Values of the map: $($myMap.Values -Join ', ')"

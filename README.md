@@ -42,9 +42,13 @@ $contentType -like "*application/json"
 * `-is` - both objects are the same type
 * `-isnot` - the objects aren't the same type
 
+## Collections
 
-
-
+### List
+Initialization
+```
+$list = New-Object Collections.Generic.List[String]
+```
 
 ## Print to console
 

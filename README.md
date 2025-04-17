@@ -1,5 +1,20 @@
 # powershell-doc
 
+## Boolean operations
+``
+$condition1 = $true
+$condition2 = $false
+
+$condition1 -and $condition2 # -> $false
+$condition1 -or $condition2 # -> $false
+$condition1 -xor $condition2 # -> $true (TRUE if exactly only one is TRUE, otherwise is FALSE)
+
+! $condition2 # -> $true 
+-not $condition2 # -> $true 
+``
+
+
+
 ## Comparisons
 https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.5
 ### Equality

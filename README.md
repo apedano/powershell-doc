@@ -42,6 +42,38 @@ $contentType -like "*application/json"
 * `-is` - both objects are the same type
 * `-isnot` - the objects aren't the same type
 
+## Flow control
+
+### IF
+```
+if(<condition>) {
+  ...
+} else {
+  ...
+}
+```
+
+### FOREACH
+
+```
+$myArray@("one", "two", "three")
+foreach($el in $myArray) {
+  Write-Host $el
+}
+```
+
+#### Filter an array with `where`
+```
+$validTagsArray = $tagsArray | where{$_.name -like "$harborRepositoryName*" }
+```
+
+
+
+
+
+
+
+
 ## Collections
 
 ### List

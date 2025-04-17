@@ -95,7 +95,59 @@ $validTagsArray = $tagsArray | where{$_.name -like "$harborRepositoryName*" }
 Initialization
 ```
 $list = New-Object Collections.Generic.List[String]
+
+$list.add("Value")
 ```
+
+### Hashtables
+
+Equivalent of a key value map or a dictionary
+
+Initialization
+```
+#Method 1 with semicolon
+$myMap = @{ Name = "Alice"; Age=4; City="Nuenen" }
+
+#Method 2 with newlines
+$myMap = @{
+  Name = "Alice"
+  Age=4
+  City="Nuenen"
+}
+
+#Empty hashtable
+$myMap = @{}
+```
+Operations 
+```
+#Accessing values
+$($myMap.Name)
+$($myMap["Age"])
+
+Write-Host "Keys of the map: $($myMap.Keys -Join ', ')"
+Write-Host "Values of the map: $($myMap.Values -Join ', ')"
+
+foreach($entry in $myMap.GetEnumerator()) {
+  Write-Host "Key: $($entry.Key) Value: $($entry.Value)"
+}
+
+#Adding/modifying
+$myMap.Occupation = "Student"
+$myMap.Age = 5 # update
+
+#Remove
+$myMap.Remove("Name")
+
+#Existence check
+$myMap.ContainsKey("Name")
+
+
+
+```
+
+
+
+
 
 ## Print to console
 

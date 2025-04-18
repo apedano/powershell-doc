@@ -11,6 +11,6 @@ $tagsArray = $responseJson.tags
 
 foreach($tagObj in $tagsArray) {
   $tagName = $tagObj.name
+  $tagPushTime = $(Get-Date $tagObj.push_time)
 }
-
 ```
